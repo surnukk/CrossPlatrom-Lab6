@@ -20,6 +20,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.Font
 import ua.morozova.laba.ui.theme.AppTheme
+import co.touchlab.kermit.Logger
 
 import laba.composeapp.generated.resources.Res
 import laba.composeapp.generated.resources.compose_multiplatform
@@ -37,7 +38,10 @@ fun App() {
                 .fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            Button(onClick = { showContent = !showContent }) {
+            Button(onClick = {
+                showContent = !showContent
+                Logger.i { "Logger test." }
+            }) {
                 Text("Click me!")
             }
             AnimatedVisibility(showContent) {
