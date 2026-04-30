@@ -1,9 +1,11 @@
 package ua.morozova.laba
 
+import ua.morozova.laba.data.about.Platform
+
 class Greeting {
-    private val platform = getPlatform()
+    private val platform = Platform()
 
     fun greet(): String {
-        return "Hello, ${platform.name}!"
+        return "Hello, ${platform.osName}!"
     }
 }
