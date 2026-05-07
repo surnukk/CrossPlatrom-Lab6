@@ -21,14 +21,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
+import org.koin.compose.viewmodel.koinViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 
 @Composable
 internal fun AboutScreen(
-    viewModel: AboutViewModel = viewModel(
-        factory = aboutViewModelFactory,
-    ),
+    viewModel: AboutViewModel = koinViewModel(),
     onUpButtonClick: () -> Unit
 ) {
     Column {
