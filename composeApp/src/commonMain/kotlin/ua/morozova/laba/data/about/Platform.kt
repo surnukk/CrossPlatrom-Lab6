@@ -1,5 +1,6 @@
 package ua.morozova.laba.data.about
 
+@Suppress("EXPECT_ACTUAL_CLASSIFIERS_ARE_IN_BETA_WARNING")
 expect open class Platform() {
     val osName: String
     val osVersion: String
@@ -12,6 +13,7 @@ expect open class Platform() {
     fun logSystemInfo()
 }
 
+@Suppress("EXPECT_ACTUAL_CLASSIFIERS_ARE_IN_BETA_WARNING")
 expect class ScreenInfo() {
     val width: Int
     val height: Int
