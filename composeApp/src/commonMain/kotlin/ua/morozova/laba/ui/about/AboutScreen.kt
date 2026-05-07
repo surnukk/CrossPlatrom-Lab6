@@ -77,12 +77,10 @@ private fun RowView(
         Column(Modifier.padding(8.dp)) {
             Text(
                 text = title,
-                style = MaterialTheme.typography.bodySmall,
-                color = Color.Gray,
+                color = MaterialTheme.colorScheme.onSurface,
             )
             Text(
                 text = subtitle,
-                style = MaterialTheme.typography.bodyLarge,
             )
         }
         HorizontalDivider()

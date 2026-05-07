@@ -6,6 +6,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import laba.composeapp.generated.resources.Res
 import laba.composeapp.generated.resources.googlesans_regular
+import laba.composeapp.generated.resources.montserrat_regular
 import org.jetbrains.compose.resources.Font
 
 private val baseline = Typography()

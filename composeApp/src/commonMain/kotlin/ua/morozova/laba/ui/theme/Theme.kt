@@ -12,6 +12,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import laba.composeapp.generated.resources.Res
 import laba.composeapp.generated.resources.googlesans_regular
+import laba.composeapp.generated.resources.montserrat_regular
+import laba.composeapp.generated.resources.tenorsans_regular
 import org.jetbrains.compose.resources.Font
 
 private val lightScheme = lightColorScheme(
@@ -260,11 +262,11 @@ fun AppTheme(
     content: @Composable() () -> Unit
 ) {
     val colorScheme = when {
-        darkTheme -> ua.morozova.laba.ui.theme.lightScheme
+        darkTheme -> ua.morozova.laba.ui.theme.darkScheme
         else -> ua.morozova.laba.ui.theme.lightScheme
     }
 
-    val audioWideFont = Font(Res.font.googlesans_regular)
+    val audioWideFont = Font(Res.font.tenorsans_regular)
     val appTypography = remember { getTypography(audioWideFont) }
 
     MaterialTheme(
