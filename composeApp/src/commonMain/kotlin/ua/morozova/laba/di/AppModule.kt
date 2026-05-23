@@ -14,7 +14,9 @@ import ua.morozova.laba.data.about.AboutRepository
 import ua.morozova.laba.data.about.Platform
 import ua.morozova.laba.data.common.preferences.AppPreferences
 import ua.morozova.laba.data.common.preferences.Preferences
+import ua.morozova.laba.data.reminders.RemindersRepository
 import ua.morozova.laba.ui.about.AboutViewModel
+import ua.morozova.laba.ui.reminders.ReminderViewModel
 
 private fun createSettings() : Settings = Settings()
 val dataModule = module {
@@ -27,4 +29,6 @@ val appModule = module {
     single<Platform>()
     single<AboutRepository>()
     viewModel<AboutViewModel>()
+    single<RemindersRepository>()
+    viewModel<ReminderViewModel>()
 }
