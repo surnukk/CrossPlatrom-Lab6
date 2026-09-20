@@ -1,6 +1,5 @@
 package ua.morozova.laba.di
 
-
 import com.russhwolf.settings.ObservableSettings
 import com.russhwolf.settings.Settings
 import org.koin.core.module.dsl.singleOf

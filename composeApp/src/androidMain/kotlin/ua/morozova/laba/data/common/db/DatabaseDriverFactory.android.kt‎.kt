@@ -9,6 +9,6 @@ actual class DatabaseDriverFactory(
     private val context: Context
 ) {
     actual fun create(): SqlDriver {
-        return AndroidSqliteDriver(Laba.Schema, context, "organise.db")
+        return AndroidSqliteDriver(Laba.Schema, context, "laba.db")
     }
 }
